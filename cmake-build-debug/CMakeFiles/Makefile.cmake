@@ -11,7 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.9.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeSystem.cmake"
-  "../cmake/FindSDL2_image.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCInformation.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCXXInformation.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake"
@@ -25,18 +24,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Compiler/GNU-C.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Compiler/GNU-CXX.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Compiler/GNU.cmake"
-  "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/FindPNG.cmake"
-  "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake"
-  "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/FindPackageMessage.cmake"
-  "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/FindZLIB.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Platform/Linux-GNU-C.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Platform/Linux-GNU-CXX.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Platform/Linux-GNU.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Platform/Linux.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/Platform/UnixPaths.cmake"
   "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/ProcessorCount.cmake"
-  "/home/alexz/Documents/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/SelectLibraryConfigurations.cmake"
-  "/usr/local/lib/cmake/SDL2/sdl2-config.cmake"
   )
 
 # The corresponding makefile is:

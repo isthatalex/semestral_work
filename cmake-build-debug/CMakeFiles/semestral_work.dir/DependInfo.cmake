@@ -4,17 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alexz/CLionProjects/semestral_work/CGame.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/CGame.cpp.o"
-  "/home/alexz/CLionProjects/semestral_work/CGameObject.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/CGameObject.cpp.o"
-  "/home/alexz/CLionProjects/semestral_work/CMap.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/CMap.cpp.o"
-  "/home/alexz/CLionProjects/semestral_work/CTextureManager.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/CTextureManager.cpp.o"
-  "/home/alexz/CLionProjects/semestral_work/main.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/main.cpp.o"
+  "/home/alexz/CLionProjects/semestral_work/src/CGame.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/src/CGame.cpp.o"
+  "/home/alexz/CLionProjects/semestral_work/src/CGameObject.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o"
+  "/home/alexz/CLionProjects/semestral_work/src/CMap.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/src/CMap.cpp.o"
+  "/home/alexz/CLionProjects/semestral_work/src/CMovingObject.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o"
+  "/home/alexz/CLionProjects/semestral_work/src/CTextureManager.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o"
+  "/home/alexz/CLionProjects/semestral_work/src/IMovable.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/src/IMovable.cpp.o"
+  "/home/alexz/CLionProjects/semestral_work/src/main.cpp" "/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles/semestral_work.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/include/SDL2"
   )
 
 # Targets to which this target links.

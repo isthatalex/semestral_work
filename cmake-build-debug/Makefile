@@ -123,140 +123,194 @@ semestral_work/fast:
 	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/build
 .PHONY : semestral_work/fast
 
-CGame.o: CGame.cpp.o
+src/CGame.o: src/CGame.cpp.o
 
-.PHONY : CGame.o
-
-# target to build an object file
-CGame.cpp.o:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CGame.cpp.o
-.PHONY : CGame.cpp.o
-
-CGame.i: CGame.cpp.i
-
-.PHONY : CGame.i
-
-# target to preprocess a source file
-CGame.cpp.i:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CGame.cpp.i
-.PHONY : CGame.cpp.i
-
-CGame.s: CGame.cpp.s
-
-.PHONY : CGame.s
-
-# target to generate assembly for a file
-CGame.cpp.s:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CGame.cpp.s
-.PHONY : CGame.cpp.s
-
-CGameObject.o: CGameObject.cpp.o
-
-.PHONY : CGameObject.o
+.PHONY : src/CGame.o
 
 # target to build an object file
-CGameObject.cpp.o:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CGameObject.cpp.o
-.PHONY : CGameObject.cpp.o
+src/CGame.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGame.cpp.o
+.PHONY : src/CGame.cpp.o
 
-CGameObject.i: CGameObject.cpp.i
+src/CGame.i: src/CGame.cpp.i
 
-.PHONY : CGameObject.i
+.PHONY : src/CGame.i
 
 # target to preprocess a source file
-CGameObject.cpp.i:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CGameObject.cpp.i
-.PHONY : CGameObject.cpp.i
+src/CGame.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGame.cpp.i
+.PHONY : src/CGame.cpp.i
 
-CGameObject.s: CGameObject.cpp.s
+src/CGame.s: src/CGame.cpp.s
 
-.PHONY : CGameObject.s
+.PHONY : src/CGame.s
 
 # target to generate assembly for a file
-CGameObject.cpp.s:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CGameObject.cpp.s
-.PHONY : CGameObject.cpp.s
+src/CGame.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGame.cpp.s
+.PHONY : src/CGame.cpp.s
 
-CMap.o: CMap.cpp.o
+src/CGameObject.o: src/CGameObject.cpp.o
 
-.PHONY : CMap.o
+.PHONY : src/CGameObject.o
 
 # target to build an object file
-CMap.cpp.o:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CMap.cpp.o
-.PHONY : CMap.cpp.o
+src/CGameObject.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o
+.PHONY : src/CGameObject.cpp.o
 
-CMap.i: CMap.cpp.i
+src/CGameObject.i: src/CGameObject.cpp.i
 
-.PHONY : CMap.i
+.PHONY : src/CGameObject.i
 
 # target to preprocess a source file
-CMap.cpp.i:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CMap.cpp.i
-.PHONY : CMap.cpp.i
+src/CGameObject.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGameObject.cpp.i
+.PHONY : src/CGameObject.cpp.i
 
-CMap.s: CMap.cpp.s
+src/CGameObject.s: src/CGameObject.cpp.s
 
-.PHONY : CMap.s
+.PHONY : src/CGameObject.s
 
 # target to generate assembly for a file
-CMap.cpp.s:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CMap.cpp.s
-.PHONY : CMap.cpp.s
+src/CGameObject.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGameObject.cpp.s
+.PHONY : src/CGameObject.cpp.s
 
-CTextureManager.o: CTextureManager.cpp.o
+src/CMap.o: src/CMap.cpp.o
 
-.PHONY : CTextureManager.o
+.PHONY : src/CMap.o
 
 # target to build an object file
-CTextureManager.cpp.o:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CTextureManager.cpp.o
-.PHONY : CTextureManager.cpp.o
+src/CMap.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMap.cpp.o
+.PHONY : src/CMap.cpp.o
 
-CTextureManager.i: CTextureManager.cpp.i
+src/CMap.i: src/CMap.cpp.i
 
-.PHONY : CTextureManager.i
+.PHONY : src/CMap.i
 
 # target to preprocess a source file
-CTextureManager.cpp.i:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CTextureManager.cpp.i
-.PHONY : CTextureManager.cpp.i
+src/CMap.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMap.cpp.i
+.PHONY : src/CMap.cpp.i
 
-CTextureManager.s: CTextureManager.cpp.s
+src/CMap.s: src/CMap.cpp.s
 
-.PHONY : CTextureManager.s
+.PHONY : src/CMap.s
 
 # target to generate assembly for a file
-CTextureManager.cpp.s:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/CTextureManager.cpp.s
-.PHONY : CTextureManager.cpp.s
+src/CMap.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMap.cpp.s
+.PHONY : src/CMap.cpp.s
 
-main.o: main.cpp.o
+src/CMovingObject.o: src/CMovingObject.cpp.o
 
-.PHONY : main.o
+.PHONY : src/CMovingObject.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/CMovingObject.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o
+.PHONY : src/CMovingObject.cpp.o
 
-main.i: main.cpp.i
+src/CMovingObject.i: src/CMovingObject.cpp.i
 
-.PHONY : main.i
+.PHONY : src/CMovingObject.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/CMovingObject.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.i
+.PHONY : src/CMovingObject.cpp.i
 
-main.s: main.cpp.s
+src/CMovingObject.s: src/CMovingObject.cpp.s
 
-.PHONY : main.s
+.PHONY : src/CMovingObject.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/CMovingObject.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.s
+.PHONY : src/CMovingObject.cpp.s
+
+src/CTextureManager.o: src/CTextureManager.cpp.o
+
+.PHONY : src/CTextureManager.o
+
+# target to build an object file
+src/CTextureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o
+.PHONY : src/CTextureManager.cpp.o
+
+src/CTextureManager.i: src/CTextureManager.cpp.i
+
+.PHONY : src/CTextureManager.i
+
+# target to preprocess a source file
+src/CTextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.i
+.PHONY : src/CTextureManager.cpp.i
+
+src/CTextureManager.s: src/CTextureManager.cpp.s
+
+.PHONY : src/CTextureManager.s
+
+# target to generate assembly for a file
+src/CTextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.s
+.PHONY : src/CTextureManager.cpp.s
+
+src/IMovable.o: src/IMovable.cpp.o
+
+.PHONY : src/IMovable.o
+
+# target to build an object file
+src/IMovable.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/IMovable.cpp.o
+.PHONY : src/IMovable.cpp.o
+
+src/IMovable.i: src/IMovable.cpp.i
+
+.PHONY : src/IMovable.i
+
+# target to preprocess a source file
+src/IMovable.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/IMovable.cpp.i
+.PHONY : src/IMovable.cpp.i
+
+src/IMovable.s: src/IMovable.cpp.s
+
+.PHONY : src/IMovable.s
+
+# target to generate assembly for a file
+src/IMovable.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/IMovable.cpp.s
+.PHONY : src/IMovable.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -267,21 +321,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... semestral_work"
-	@echo "... CGame.o"
-	@echo "... CGame.i"
-	@echo "... CGame.s"
-	@echo "... CGameObject.o"
-	@echo "... CGameObject.i"
-	@echo "... CGameObject.s"
-	@echo "... CMap.o"
-	@echo "... CMap.i"
-	@echo "... CMap.s"
-	@echo "... CTextureManager.o"
-	@echo "... CTextureManager.i"
-	@echo "... CTextureManager.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/CGame.o"
+	@echo "... src/CGame.i"
+	@echo "... src/CGame.s"
+	@echo "... src/CGameObject.o"
+	@echo "... src/CGameObject.i"
+	@echo "... src/CGameObject.s"
+	@echo "... src/CMap.o"
+	@echo "... src/CMap.i"
+	@echo "... src/CMap.s"
+	@echo "... src/CMovingObject.o"
+	@echo "... src/CMovingObject.i"
+	@echo "... src/CMovingObject.s"
+	@echo "... src/CTextureManager.o"
+	@echo "... src/CTextureManager.i"
+	@echo "... src/CTextureManager.s"
+	@echo "... src/IMovable.o"
+	@echo "... src/IMovable.i"
+	@echo "... src/IMovable.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

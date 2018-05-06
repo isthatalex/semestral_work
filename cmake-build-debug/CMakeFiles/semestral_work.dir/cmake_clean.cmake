@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/semestral_work.dir/main.cpp.o"
-  "CMakeFiles/semestral_work.dir/CGame.cpp.o"
-  "CMakeFiles/semestral_work.dir/CTextureManager.cpp.o"
-  "CMakeFiles/semestral_work.dir/CGameObject.cpp.o"
-  "CMakeFiles/semestral_work.dir/CMap.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/main.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/CGame.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/CMap.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/IMovable.cpp.o"
   "semestral_work.pdb"
   "semestral_work"
 )
