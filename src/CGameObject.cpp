@@ -24,17 +24,20 @@ CGameObject::CGameObject(const char *textureName, int x, int y, int w, int h) {
 }
 
 void CGameObject::update (){
-  //  m_xPos ++;
-  //  m_yPos ++;
-
     destRect.x = m_xPos;
     destRect.y = m_yPos;
-
-
 }
 
 void CGameObject::render() {
     SDL_RenderCopy(CGame::myRenderer, m_ObjectTexture, &srcRect, &destRect);
+}
+
+SDL_Rect CGameObject::getRect() const {
+    return destRect;
+}
+
+SDL_Rect &CGameObject::getRect() {
+    return destRect;
 }
 
 

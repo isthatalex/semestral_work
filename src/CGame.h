@@ -7,7 +7,13 @@
 
 #include <SDL2/SDL.h>
 #include <iostream>
+#include <vector>
 #include <SDL2/SDL_image.h>
+#include "CGameObject.h"
+#include "CHero.h"
+#include "CMap.h"
+class CMap;
+
 class CGame {
 public:
     CGame();
@@ -21,16 +27,21 @@ public:
     void render();
     void clean();
 
-    bool running (); // is the game running
+    bool loadGame(const char * fileName);
+    bool saveGame(const char * fileName);
+    bool running () const; // is the game running
 
     static SDL_Renderer * myRenderer;
 
-    bool checkCollision(const SDL_Rect & a, const SDL_Rect & b);
+    bool checkCollision(const SDL_Rect & a, const SDL_Rect & b) const;
 
 private:
     bool isRunning;
     SDL_Window * myWindow;
-
+    CHero * myPlayer;
+    int enemyCnt;
+    CMap *myMap;
+    std::vector <CGameObject * > m_Objects;
 
 };
 

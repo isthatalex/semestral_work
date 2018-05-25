@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CEnemy.cpp">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CEnemy.h">
+			<Option target="semestral_work"/>
+		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CGame.cpp">
 			<Option target="semestral_work"/>
 		</Unit>
@@ -94,6 +100,18 @@
 			<Option target="semestral_work"/>
 		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CGameObject.h">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CHero.cpp">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CHero.h">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CInventory.cpp">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CInventory.h">
 			<Option target="semestral_work"/>
 		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CMap.cpp">
@@ -108,16 +126,22 @@
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CMovingObject.h">
 			<Option target="semestral_work"/>
 		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CRune.cpp">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CRune.h">
+			<Option target="semestral_work"/>
+		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CTextureManager.cpp">
 			<Option target="semestral_work"/>
 		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CTextureManager.h">
 			<Option target="semestral_work"/>
 		</Unit>
-		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/IMovable.cpp">
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CWall.cpp">
 			<Option target="semestral_work"/>
 		</Unit>
-		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/IMovable.h">
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CWall.h">
 			<Option target="semestral_work"/>
 		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/main.cpp">

@@ -123,6 +123,33 @@ semestral_work/fast:
 	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/build
 .PHONY : semestral_work/fast
 
+src/CEnemy.o: src/CEnemy.cpp.o
+
+.PHONY : src/CEnemy.o
+
+# target to build an object file
+src/CEnemy.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o
+.PHONY : src/CEnemy.cpp.o
+
+src/CEnemy.i: src/CEnemy.cpp.i
+
+.PHONY : src/CEnemy.i
+
+# target to preprocess a source file
+src/CEnemy.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CEnemy.cpp.i
+.PHONY : src/CEnemy.cpp.i
+
+src/CEnemy.s: src/CEnemy.cpp.s
+
+.PHONY : src/CEnemy.s
+
+# target to generate assembly for a file
+src/CEnemy.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CEnemy.cpp.s
+.PHONY : src/CEnemy.cpp.s
+
 src/CGame.o: src/CGame.cpp.o
 
 .PHONY : src/CGame.o
@@ -176,6 +203,60 @@ src/CGameObject.s: src/CGameObject.cpp.s
 src/CGameObject.cpp.s:
 	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGameObject.cpp.s
 .PHONY : src/CGameObject.cpp.s
+
+src/CHero.o: src/CHero.cpp.o
+
+.PHONY : src/CHero.o
+
+# target to build an object file
+src/CHero.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CHero.cpp.o
+.PHONY : src/CHero.cpp.o
+
+src/CHero.i: src/CHero.cpp.i
+
+.PHONY : src/CHero.i
+
+# target to preprocess a source file
+src/CHero.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CHero.cpp.i
+.PHONY : src/CHero.cpp.i
+
+src/CHero.s: src/CHero.cpp.s
+
+.PHONY : src/CHero.s
+
+# target to generate assembly for a file
+src/CHero.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CHero.cpp.s
+.PHONY : src/CHero.cpp.s
+
+src/CInventory.o: src/CInventory.cpp.o
+
+.PHONY : src/CInventory.o
+
+# target to build an object file
+src/CInventory.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CInventory.cpp.o
+.PHONY : src/CInventory.cpp.o
+
+src/CInventory.i: src/CInventory.cpp.i
+
+.PHONY : src/CInventory.i
+
+# target to preprocess a source file
+src/CInventory.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CInventory.cpp.i
+.PHONY : src/CInventory.cpp.i
+
+src/CInventory.s: src/CInventory.cpp.s
+
+.PHONY : src/CInventory.s
+
+# target to generate assembly for a file
+src/CInventory.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CInventory.cpp.s
+.PHONY : src/CInventory.cpp.s
 
 src/CMap.o: src/CMap.cpp.o
 
@@ -231,6 +312,33 @@ src/CMovingObject.cpp.s:
 	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.s
 .PHONY : src/CMovingObject.cpp.s
 
+src/CRune.o: src/CRune.cpp.o
+
+.PHONY : src/CRune.o
+
+# target to build an object file
+src/CRune.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CRune.cpp.o
+.PHONY : src/CRune.cpp.o
+
+src/CRune.i: src/CRune.cpp.i
+
+.PHONY : src/CRune.i
+
+# target to preprocess a source file
+src/CRune.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CRune.cpp.i
+.PHONY : src/CRune.cpp.i
+
+src/CRune.s: src/CRune.cpp.s
+
+.PHONY : src/CRune.s
+
+# target to generate assembly for a file
+src/CRune.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CRune.cpp.s
+.PHONY : src/CRune.cpp.s
+
 src/CTextureManager.o: src/CTextureManager.cpp.o
 
 .PHONY : src/CTextureManager.o
@@ -258,32 +366,32 @@ src/CTextureManager.cpp.s:
 	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.s
 .PHONY : src/CTextureManager.cpp.s
 
-src/IMovable.o: src/IMovable.cpp.o
+src/CWall.o: src/CWall.cpp.o
 
-.PHONY : src/IMovable.o
+.PHONY : src/CWall.o
 
 # target to build an object file
-src/IMovable.cpp.o:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/IMovable.cpp.o
-.PHONY : src/IMovable.cpp.o
+src/CWall.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CWall.cpp.o
+.PHONY : src/CWall.cpp.o
 
-src/IMovable.i: src/IMovable.cpp.i
+src/CWall.i: src/CWall.cpp.i
 
-.PHONY : src/IMovable.i
+.PHONY : src/CWall.i
 
 # target to preprocess a source file
-src/IMovable.cpp.i:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/IMovable.cpp.i
-.PHONY : src/IMovable.cpp.i
+src/CWall.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CWall.cpp.i
+.PHONY : src/CWall.cpp.i
 
-src/IMovable.s: src/IMovable.cpp.s
+src/CWall.s: src/CWall.cpp.s
 
-.PHONY : src/IMovable.s
+.PHONY : src/CWall.s
 
 # target to generate assembly for a file
-src/IMovable.cpp.s:
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/IMovable.cpp.s
-.PHONY : src/IMovable.cpp.s
+src/CWall.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CWall.cpp.s
+.PHONY : src/CWall.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -321,24 +429,36 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... semestral_work"
+	@echo "... src/CEnemy.o"
+	@echo "... src/CEnemy.i"
+	@echo "... src/CEnemy.s"
 	@echo "... src/CGame.o"
 	@echo "... src/CGame.i"
 	@echo "... src/CGame.s"
 	@echo "... src/CGameObject.o"
 	@echo "... src/CGameObject.i"
 	@echo "... src/CGameObject.s"
+	@echo "... src/CHero.o"
+	@echo "... src/CHero.i"
+	@echo "... src/CHero.s"
+	@echo "... src/CInventory.o"
+	@echo "... src/CInventory.i"
+	@echo "... src/CInventory.s"
 	@echo "... src/CMap.o"
 	@echo "... src/CMap.i"
 	@echo "... src/CMap.s"
 	@echo "... src/CMovingObject.o"
 	@echo "... src/CMovingObject.i"
 	@echo "... src/CMovingObject.s"
+	@echo "... src/CRune.o"
+	@echo "... src/CRune.i"
+	@echo "... src/CRune.s"
 	@echo "... src/CTextureManager.o"
 	@echo "... src/CTextureManager.i"
 	@echo "... src/CTextureManager.s"
-	@echo "... src/IMovable.o"
-	@echo "... src/IMovable.i"
-	@echo "... src/IMovable.s"
+	@echo "... src/CWall.o"
+	@echo "... src/CWall.i"
+	@echo "... src/CWall.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

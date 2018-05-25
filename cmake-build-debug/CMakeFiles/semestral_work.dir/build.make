@@ -201,28 +201,124 @@ CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o.provides: CMakeFiles/semes
 CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o.provides.build: CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o
 
 
-CMakeFiles/semestral_work.dir/src/IMovable.cpp.o: CMakeFiles/semestral_work.dir/flags.make
-CMakeFiles/semestral_work.dir/src/IMovable.cpp.o: ../src/IMovable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/semestral_work.dir/src/IMovable.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semestral_work.dir/src/IMovable.cpp.o -c /home/alexz/CLionProjects/semestral_work/src/IMovable.cpp
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o: CMakeFiles/semestral_work.dir/flags.make
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CHero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/semestral_work.dir/src/CHero.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semestral_work.dir/src/CHero.cpp.o -c /home/alexz/CLionProjects/semestral_work/src/CHero.cpp
 
-CMakeFiles/semestral_work.dir/src/IMovable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semestral_work.dir/src/IMovable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexz/CLionProjects/semestral_work/src/IMovable.cpp > CMakeFiles/semestral_work.dir/src/IMovable.cpp.i
+CMakeFiles/semestral_work.dir/src/CHero.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semestral_work.dir/src/CHero.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexz/CLionProjects/semestral_work/src/CHero.cpp > CMakeFiles/semestral_work.dir/src/CHero.cpp.i
 
-CMakeFiles/semestral_work.dir/src/IMovable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semestral_work.dir/src/IMovable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexz/CLionProjects/semestral_work/src/IMovable.cpp -o CMakeFiles/semestral_work.dir/src/IMovable.cpp.s
+CMakeFiles/semestral_work.dir/src/CHero.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semestral_work.dir/src/CHero.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexz/CLionProjects/semestral_work/src/CHero.cpp -o CMakeFiles/semestral_work.dir/src/CHero.cpp.s
 
-CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.requires:
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o.requires:
 
-.PHONY : CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.requires
+.PHONY : CMakeFiles/semestral_work.dir/src/CHero.cpp.o.requires
 
-CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.provides: CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.requires
-	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.provides.build
-.PHONY : CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.provides
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o.provides: CMakeFiles/semestral_work.dir/src/CHero.cpp.o.requires
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CHero.cpp.o.provides.build
+.PHONY : CMakeFiles/semestral_work.dir/src/CHero.cpp.o.provides
 
-CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.provides.build: CMakeFiles/semestral_work.dir/src/IMovable.cpp.o
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o.provides.build: CMakeFiles/semestral_work.dir/src/CHero.cpp.o
+
+
+CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o: CMakeFiles/semestral_work.dir/flags.make
+CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o: ../src/CEnemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o -c /home/alexz/CLionProjects/semestral_work/src/CEnemy.cpp
+
+CMakeFiles/semestral_work.dir/src/CEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semestral_work.dir/src/CEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexz/CLionProjects/semestral_work/src/CEnemy.cpp > CMakeFiles/semestral_work.dir/src/CEnemy.cpp.i
+
+CMakeFiles/semestral_work.dir/src/CEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semestral_work.dir/src/CEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexz/CLionProjects/semestral_work/src/CEnemy.cpp -o CMakeFiles/semestral_work.dir/src/CEnemy.cpp.s
+
+CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.requires:
+
+.PHONY : CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.requires
+
+CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.provides: CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.requires
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.provides.build
+.PHONY : CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.provides
+
+CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.provides.build: CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o
+
+
+CMakeFiles/semestral_work.dir/src/CInventory.cpp.o: CMakeFiles/semestral_work.dir/flags.make
+CMakeFiles/semestral_work.dir/src/CInventory.cpp.o: ../src/CInventory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/semestral_work.dir/src/CInventory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semestral_work.dir/src/CInventory.cpp.o -c /home/alexz/CLionProjects/semestral_work/src/CInventory.cpp
+
+CMakeFiles/semestral_work.dir/src/CInventory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semestral_work.dir/src/CInventory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexz/CLionProjects/semestral_work/src/CInventory.cpp > CMakeFiles/semestral_work.dir/src/CInventory.cpp.i
+
+CMakeFiles/semestral_work.dir/src/CInventory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semestral_work.dir/src/CInventory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexz/CLionProjects/semestral_work/src/CInventory.cpp -o CMakeFiles/semestral_work.dir/src/CInventory.cpp.s
+
+CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.requires:
+
+.PHONY : CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.requires
+
+CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.provides: CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.provides.build
+.PHONY : CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.provides
+
+CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.provides.build: CMakeFiles/semestral_work.dir/src/CInventory.cpp.o
+
+
+CMakeFiles/semestral_work.dir/src/CWall.cpp.o: CMakeFiles/semestral_work.dir/flags.make
+CMakeFiles/semestral_work.dir/src/CWall.cpp.o: ../src/CWall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/semestral_work.dir/src/CWall.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semestral_work.dir/src/CWall.cpp.o -c /home/alexz/CLionProjects/semestral_work/src/CWall.cpp
+
+CMakeFiles/semestral_work.dir/src/CWall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semestral_work.dir/src/CWall.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexz/CLionProjects/semestral_work/src/CWall.cpp > CMakeFiles/semestral_work.dir/src/CWall.cpp.i
+
+CMakeFiles/semestral_work.dir/src/CWall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semestral_work.dir/src/CWall.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexz/CLionProjects/semestral_work/src/CWall.cpp -o CMakeFiles/semestral_work.dir/src/CWall.cpp.s
+
+CMakeFiles/semestral_work.dir/src/CWall.cpp.o.requires:
+
+.PHONY : CMakeFiles/semestral_work.dir/src/CWall.cpp.o.requires
+
+CMakeFiles/semestral_work.dir/src/CWall.cpp.o.provides: CMakeFiles/semestral_work.dir/src/CWall.cpp.o.requires
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CWall.cpp.o.provides.build
+.PHONY : CMakeFiles/semestral_work.dir/src/CWall.cpp.o.provides
+
+CMakeFiles/semestral_work.dir/src/CWall.cpp.o.provides.build: CMakeFiles/semestral_work.dir/src/CWall.cpp.o
+
+
+CMakeFiles/semestral_work.dir/src/CRune.cpp.o: CMakeFiles/semestral_work.dir/flags.make
+CMakeFiles/semestral_work.dir/src/CRune.cpp.o: ../src/CRune.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/semestral_work.dir/src/CRune.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semestral_work.dir/src/CRune.cpp.o -c /home/alexz/CLionProjects/semestral_work/src/CRune.cpp
+
+CMakeFiles/semestral_work.dir/src/CRune.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semestral_work.dir/src/CRune.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexz/CLionProjects/semestral_work/src/CRune.cpp > CMakeFiles/semestral_work.dir/src/CRune.cpp.i
+
+CMakeFiles/semestral_work.dir/src/CRune.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semestral_work.dir/src/CRune.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexz/CLionProjects/semestral_work/src/CRune.cpp -o CMakeFiles/semestral_work.dir/src/CRune.cpp.s
+
+CMakeFiles/semestral_work.dir/src/CRune.cpp.o.requires:
+
+.PHONY : CMakeFiles/semestral_work.dir/src/CRune.cpp.o.requires
+
+CMakeFiles/semestral_work.dir/src/CRune.cpp.o.provides: CMakeFiles/semestral_work.dir/src/CRune.cpp.o.requires
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CRune.cpp.o.provides.build
+.PHONY : CMakeFiles/semestral_work.dir/src/CRune.cpp.o.provides
+
+CMakeFiles/semestral_work.dir/src/CRune.cpp.o.provides.build: CMakeFiles/semestral_work.dir/src/CRune.cpp.o
 
 
 # Object files for target semestral_work
@@ -233,7 +329,11 @@ semestral_work_OBJECTS = \
 "CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o" \
 "CMakeFiles/semestral_work.dir/src/CMap.cpp.o" \
 "CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o" \
-"CMakeFiles/semestral_work.dir/src/IMovable.cpp.o"
+"CMakeFiles/semestral_work.dir/src/CHero.cpp.o" \
+"CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o" \
+"CMakeFiles/semestral_work.dir/src/CInventory.cpp.o" \
+"CMakeFiles/semestral_work.dir/src/CWall.cpp.o" \
+"CMakeFiles/semestral_work.dir/src/CRune.cpp.o"
 
 # External object files for target semestral_work
 semestral_work_EXTERNAL_OBJECTS =
@@ -244,10 +344,14 @@ semestral_work: CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o
 semestral_work: CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o
 semestral_work: CMakeFiles/semestral_work.dir/src/CMap.cpp.o
 semestral_work: CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o
-semestral_work: CMakeFiles/semestral_work.dir/src/IMovable.cpp.o
+semestral_work: CMakeFiles/semestral_work.dir/src/CHero.cpp.o
+semestral_work: CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o
+semestral_work: CMakeFiles/semestral_work.dir/src/CInventory.cpp.o
+semestral_work: CMakeFiles/semestral_work.dir/src/CWall.cpp.o
+semestral_work: CMakeFiles/semestral_work.dir/src/CRune.cpp.o
 semestral_work: CMakeFiles/semestral_work.dir/build.make
 semestral_work: CMakeFiles/semestral_work.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable semestral_work"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexz/CLionProjects/semestral_work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable semestral_work"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/semestral_work.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -261,7 +365,11 @@ CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CTextu
 CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o.requires
 CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CMap.cpp.o.requires
 CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o.requires
-CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/IMovable.cpp.o.requires
+CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CHero.cpp.o.requires
+CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CEnemy.cpp.o.requires
+CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CInventory.cpp.o.requires
+CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CWall.cpp.o.requires
+CMakeFiles/semestral_work.dir/requires: CMakeFiles/semestral_work.dir/src/CRune.cpp.o.requires
 
 .PHONY : CMakeFiles/semestral_work.dir/requires
 

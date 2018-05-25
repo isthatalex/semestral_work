@@ -4,17 +4,38 @@
 
 #include "CMovingObject.h"
 
-CMovingObject::CMovingObject(const char *textureName, int x, int y, int w, int h) :
-        CGameObject(textureName, x, y, w, h), m_xVel(0), m_yVel(0), m_HP(200), m_HPMax(m_HP), m_lvl(1)
+CMovingObject::CMovingObject(const char *textureName, int x, int y, int w, int h, int HP, int dmg) :
+        CGameObject(textureName, x, y, w, h), m_xVel(0), m_yVel(0), m_HP(HP), m_HPMax(m_HP), m_dmg(dmg)
 {}
 
-void CMovingObject::move() {
-    const int step = 1;
-    m_xPos+=m_xVel*step;
-    m_yPos+=m_yVel*step;
+
+
+
+int CMovingObject::getyVel() const {
+    return m_yVel;
 }
 
-void CMovingObject::update() {
-    move();
-    CGameObject::update();
+int CMovingObject::getxVel() const{
+    return m_xVel;
+}
+
+
+int & CMovingObject::setyVel(){
+    return m_yVel;
+}
+
+int & CMovingObject::setxVel(){
+    return m_xVel;
+}
+
+int &CMovingObject::setHP() {
+    return m_HP;
+}
+
+int CMovingObject::getHP() const {
+    return m_HP;
+}
+
+int CMovingObject::getDMG() const {
+    return m_dmg;
 }
