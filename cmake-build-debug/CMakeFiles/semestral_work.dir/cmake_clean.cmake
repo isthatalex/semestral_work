@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/semestral_work.dir/src/CInventory.cpp.o"
   "CMakeFiles/semestral_work.dir/src/CWall.cpp.o"
   "CMakeFiles/semestral_work.dir/src/CRune.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/CMenu.cpp.o"
+  "CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o"
   "semestral_work.pdb"
   "semestral_work"
 )

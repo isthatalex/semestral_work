@@ -19,12 +19,22 @@ CMovingObject.h
 /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
 
 /home/alexz/CLionProjects/semestral_work/src/CGame.cpp
-SDL2/SDL.h
--
-SDL2/SDL_image.h
--
 CGame.h
 /home/alexz/CLionProjects/semestral_work/src/CGame.h
+algorithm
+-
+fstream
+-
+utility
+-
+
+/home/alexz/CLionProjects/semestral_work/src/CGame.h
+SDL2/SDL.h
+-
+iostream
+-
+vector
+-
 CGameObject.h
 /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
 CHero.h
@@ -35,22 +45,20 @@ CMap.h
 /home/alexz/CLionProjects/semestral_work/src/CMap.h
 CWall.h
 /home/alexz/CLionProjects/semestral_work/src/CWall.h
-
-/home/alexz/CLionProjects/semestral_work/src/CGame.h
-SDL2/SDL.h
--
-iostream
--
-vector
--
+CRune.h
+/home/alexz/CLionProjects/semestral_work/src/CRune.h
 SDL2/SDL_image.h
 -
-CGameObject.h
-/home/alexz/CLionProjects/semestral_work/src/CGameObject.h
-CHero.h
-/home/alexz/CLionProjects/semestral_work/src/CHero.h
-CMap.h
-/home/alexz/CLionProjects/semestral_work/src/CMap.h
+
+/home/alexz/CLionProjects/semestral_work/src/CGameEngine.cpp
+CGameEngine.h
+/home/alexz/CLionProjects/semestral_work/src/CGameEngine.h
+
+/home/alexz/CLionProjects/semestral_work/src/CGameEngine.h
+CGame.h
+/home/alexz/CLionProjects/semestral_work/src/CGame.h
+CMenu.h
+/home/alexz/CLionProjects/semestral_work/src/CMenu.h
 
 /home/alexz/CLionProjects/semestral_work/src/CGameObject.cpp
 CGameObject.h
@@ -64,12 +72,22 @@ CGame.h
 
 /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
 SDL2/SDL.h
-/home/alexz/CLionProjects/semestral_work/src/SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+string
+-
 
 /home/alexz/CLionProjects/semestral_work/src/CHero.cpp
 CHero.h
 /home/alexz/CLionProjects/semestral_work/src/CHero.h
+CGame.h
+/home/alexz/CLionProjects/semestral_work/src/CGame.h
+CTextureManager.h
+/home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
 iostream
+-
+cstdlib
 -
 
 /home/alexz/CLionProjects/semestral_work/src/CHero.h
@@ -85,6 +103,8 @@ CInventory.h
 /home/alexz/CLionProjects/semestral_work/src/CInventory.h
 
 /home/alexz/CLionProjects/semestral_work/src/CInventory.h
+ostream
+-
 
 /home/alexz/CLionProjects/semestral_work/src/CMap.cpp
 CMap.h
@@ -93,6 +113,14 @@ CTextureManager.h
 /home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
 
 /home/alexz/CLionProjects/semestral_work/src/CMap.h
+CGame.h
+/home/alexz/CLionProjects/semestral_work/src/CGame.h
+
+/home/alexz/CLionProjects/semestral_work/src/CMenu.cpp
+CMenu.h
+/home/alexz/CLionProjects/semestral_work/src/CMenu.h
+
+/home/alexz/CLionProjects/semestral_work/src/CMenu.h
 CGame.h
 /home/alexz/CLionProjects/semestral_work/src/CGame.h
 
@@ -119,12 +147,12 @@ CHero.h
 /home/alexz/CLionProjects/semestral_work/src/CTextureManager.cpp
 CTextureManager.h
 /home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
-SDL2/SDL_image.h
-/home/alexz/CLionProjects/semestral_work/src/SDL2/SDL_image.h
 CGame.h
 /home/alexz/CLionProjects/semestral_work/src/CGame.h
 
 /home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
+SDL2/SDL_image.h
+-
 SDL2/SDL.h
 -
 
@@ -141,6 +169,6 @@ CHero.h
 /home/alexz/CLionProjects/semestral_work/src/CHero.h
 
 /home/alexz/CLionProjects/semestral_work/src/main.cpp
-CGame.h
-/home/alexz/CLionProjects/semestral_work/src/CGame.h
+CGameEngine.h
+/home/alexz/CLionProjects/semestral_work/src/CGameEngine.h
 

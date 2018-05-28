@@ -5,6 +5,7 @@
 #ifndef SEMESTRAL_WORK_CTEXTUREMANAGER_H
 #define SEMESTRAL_WORK_CTEXTUREMANAGER_H
 
+#include <SDL2/SDL_image.h>
 #include <SDL2/SDL.h>
 
 class CTextureManager{

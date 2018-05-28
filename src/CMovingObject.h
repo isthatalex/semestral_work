@@ -7,14 +7,13 @@
 
 #include "CGameObject.h"
 #include <string>
-//#include "CHero.h"
 
 class CHero;
 class CMovingObject : public CGameObject {
 public:
     CMovingObject(const char *textureName, int x, int y,
-                  int w, int h, int HP, int dmg);
-
+                  int w, int h, int HP, int dmg, int HPMax);
+    ~CMovingObject() = default;
     virtual void move() = 0;
 
     virtual void update() = 0;
@@ -34,6 +33,7 @@ public:
     int getDMG() const;
 
     virtual void collideWith(CHero &x) = 0;
+    std::string  save2String () const = 0;
 
 protected:
     int m_xVel;

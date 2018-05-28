@@ -8,27 +8,30 @@
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <vector>
-#include <SDL2/SDL_image.h>
 #include "CGameObject.h"
 #include "CHero.h"
+#include "CEnemy.h"
 #include "CMap.h"
+#include "CWall.h"
+#include "CRune.h"
+#include <SDL2/SDL_image.h>
+
 class CMap;
 
 class CGame {
 public:
-    CGame();
+    CGame(SDL_Window * wind, SDL_Renderer * rend, std::string fileName = "../images/gameFile.txt");
     ~CGame();
 
-    void init (const char* title, int xpos, int ypos,
-                int width, int height, bool fullscreen);
+    void init ();
 
     void handleEvents();
     void update();
     void render();
     void clean();
 
-    bool loadGame(const char * fileName);
-    bool saveGame(const char * fileName);
+    bool loadGame(std::string fileName);
+    bool saveGame(std::string fileName);
     bool running () const; // is the game running
 
     static SDL_Renderer * myRenderer;
@@ -39,10 +42,11 @@ private:
     bool isRunning;
     SDL_Window * myWindow;
     CHero * myPlayer;
-    int enemyCnt;
+    std::string fileName;
     CMap *myMap;
     std::vector <CGameObject * > m_Objects;
 
+    bool checkCollisionHit(SDL_Rect &rect, SDL_Rect &sdl_rect);
 };
 
 

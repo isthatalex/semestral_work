@@ -3,7 +3,6 @@
 //
 
 #include "CTextureManager.h"
-#include "SDL2/SDL_image.h"
 #include "CGame.h"
 
 SDL_Texture * CTextureManager::LoadTexture(const char *fileName) {

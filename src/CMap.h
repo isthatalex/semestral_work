@@ -15,7 +15,8 @@ public:
 
     void DrawMap();
     void LoadMap(int arr[20][25]);
-
+    friend std::ostream & operator << (std::ostream & os, const CMap & a);
+    std::string save2String () const;
 private:
 
     SDL_Rect src, dest;

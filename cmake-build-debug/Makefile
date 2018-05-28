@@ -177,6 +177,33 @@ src/CGame.cpp.s:
 	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGame.cpp.s
 .PHONY : src/CGame.cpp.s
 
+src/CGameEngine.o: src/CGameEngine.cpp.o
+
+.PHONY : src/CGameEngine.o
+
+# target to build an object file
+src/CGameEngine.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o
+.PHONY : src/CGameEngine.cpp.o
+
+src/CGameEngine.i: src/CGameEngine.cpp.i
+
+.PHONY : src/CGameEngine.i
+
+# target to preprocess a source file
+src/CGameEngine.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.i
+.PHONY : src/CGameEngine.cpp.i
+
+src/CGameEngine.s: src/CGameEngine.cpp.s
+
+.PHONY : src/CGameEngine.s
+
+# target to generate assembly for a file
+src/CGameEngine.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.s
+.PHONY : src/CGameEngine.cpp.s
+
 src/CGameObject.o: src/CGameObject.cpp.o
 
 .PHONY : src/CGameObject.o
@@ -284,6 +311,33 @@ src/CMap.s: src/CMap.cpp.s
 src/CMap.cpp.s:
 	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMap.cpp.s
 .PHONY : src/CMap.cpp.s
+
+src/CMenu.o: src/CMenu.cpp.o
+
+.PHONY : src/CMenu.o
+
+# target to build an object file
+src/CMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMenu.cpp.o
+.PHONY : src/CMenu.cpp.o
+
+src/CMenu.i: src/CMenu.cpp.i
+
+.PHONY : src/CMenu.i
+
+# target to preprocess a source file
+src/CMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMenu.cpp.i
+.PHONY : src/CMenu.cpp.i
+
+src/CMenu.s: src/CMenu.cpp.s
+
+.PHONY : src/CMenu.s
+
+# target to generate assembly for a file
+src/CMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/semestral_work.dir/build.make CMakeFiles/semestral_work.dir/src/CMenu.cpp.s
+.PHONY : src/CMenu.cpp.s
 
 src/CMovingObject.o: src/CMovingObject.cpp.o
 
@@ -435,6 +489,9 @@ help:
 	@echo "... src/CGame.o"
 	@echo "... src/CGame.i"
 	@echo "... src/CGame.s"
+	@echo "... src/CGameEngine.o"
+	@echo "... src/CGameEngine.i"
+	@echo "... src/CGameEngine.s"
 	@echo "... src/CGameObject.o"
 	@echo "... src/CGameObject.i"
 	@echo "... src/CGameObject.s"
@@ -447,6 +504,9 @@ help:
 	@echo "... src/CMap.o"
 	@echo "... src/CMap.i"
 	@echo "... src/CMap.s"
+	@echo "... src/CMenu.o"
+	@echo "... src/CMenu.i"
+	@echo "... src/CMenu.s"
 	@echo "... src/CMovingObject.o"
 	@echo "... src/CMovingObject.i"
 	@echo "... src/CMovingObject.s"

@@ -1,59 +1,32 @@
 //
 // Created by alexz on 5/4/18.
 //
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include "CGame.h"
-#include "CGameObject.h"
-#include "CHero.h"
-#include "CEnemy.h"
-#include "CMap.h"
-#include "CWall.h"
 
+#include "CGame.h"
+#include <algorithm>
+#include <fstream>
+#include <utility>
 
 
 SDL_Renderer *CGame::myRenderer = NULL;
 
-CGame::CGame() {
+CGame::CGame(SDL_Window * wind, SDL_Renderer * rend, std::string file) {
     std::cout << "Game created" << std::endl;
-    enemyCnt = 0;
+    myWindow = wind;
+    myRenderer = rend;
+    fileName = std::move(file);
 }
 
 CGame::~CGame() {
 
 }
 
-void CGame::init(const char *title, int xpos, int ypos,
-                 int width, int height, bool fullscreen) {
-    int windowFlags = 0;
-    if (fullscreen) {
-        windowFlags = SDL_WINDOW_FULLSCREEN;
-    }
-    if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
-        std::cout << "Subsystems Initialized..." << std::endl;
-        myWindow = SDL_CreateWindow(title, xpos, ypos, width, height, windowFlags);
-
-        if (myWindow) {
-            std::cout << "Window created..." << std::endl;
-        }
-
-        myRenderer = SDL_CreateRenderer(myWindow, -1, 0);
-        if (myRenderer) {
-            SDL_SetRenderDrawColor(myRenderer, 255, 255, 255, 255);
-            std::cout << "Renderer created..." << std::endl;
-        }
-
-        isRunning = true;
-
-    } else {
-        isRunning = false;
-    }
-
+void CGame::init() {
+    isRunning = true;
     myMap = new CMap();
-    myPlayer = new CHero("../images/cat.png", 0, 0, 96, 96, 200, 20);
-    m_Objects.push_back(new CEnemy("../images/enemy.png", 450, 450, 96, 96, 100, 50));
-    enemyCnt++;
-    m_Objects.push_back(new CWall("../images/wall.png", 200, 200, 32, 250));
+    loadGame(fileName);
+
+
 
 }
 
@@ -63,6 +36,7 @@ void CGame::handleEvents() {
     switch (event.type) {
         case SDL_QUIT:
             isRunning = false;
+            saveGame("../images/savedGame.txt");
             break;
         case SDL_KEYDOWN:
             /* Check the SDLKey values and move change the coords */
@@ -80,21 +54,23 @@ void CGame::handleEvents() {
                 case SDLK_DOWN:
                     myPlayer->setyVel() =  1;
                     break;
+                case SDLK_0:
+                    myPlayer->useHeal();
+                case SDLK_1:
+                    myPlayer->useDD();
+                case SDLK_2:
+                    myPlayer->useHaste();
+                case SDLK_x:
+                    myPlayer->hitAnimationCnt = 5;
                 default:
                     break;
             }
             break;
-            /* We must also use the SDL_KEYUP events to zero the x */
-            /* and y velocity variables. But we must also be       */
-            /* careful not to zero the velocities when we shouldn't*/
+
         case SDL_KEYUP:
             switch( event.key.keysym.sym ){
                 case SDLK_LEFT:
-                    /* We check to make sure the alien is moving */
-                    /* to the left. If it is then we zero the    */
-                    /* velocity. If the alien is moving to the   */
-                    /* right then the right key is still press   */
-                    /* so we don't touch the velocity            */
+
                     if( myPlayer->getxVel() < 0 )
                         myPlayer->setxVel() = 0;
                     break;
@@ -121,22 +97,20 @@ void CGame::handleEvents() {
 
 //movement
 void CGame::update() {
-
+    m_Objects.erase(
+            std::remove_if(m_Objects.begin(), m_Objects.end(), [&](CGameObject* entity) {
+                return (entity->isDestroyed()); }),
+            m_Objects.end());
     for (std::vector<CGameObject*>::iterator x = m_Objects.begin(); x!= m_Objects.end(); ++x){
         if (checkCollision(myPlayer->getRect(), (*x)->getRect())) (*x)->collideWith(*myPlayer);
     }
 
-    /*if (checkCollision(myPlayer->getRect(), myWall->getRect())){
-        myPlayer->setxVel() = 0;
-        myPlayer->setyVel() = 0;
-        std::cout << "Collision wall!!!" << std::endl;
+    for (std::vector<CGameObject*>::iterator x = m_Objects.begin() + CWall::cnt; x!= m_Objects.begin()+ CWall::cnt +
+                                                                                             CEnemy::cnt; ++x){
+        if (checkCollisionHit(myPlayer->getRect(), (*x)->getRect())) (*x)->takeDmg(myPlayer->getDMG());
     }
-    if (checkCollision(myPlayer->getRect(), myEnemy->getRect())){
-        myPlayer->setxVel() = 0;
-        myPlayer->setyVel() = 0;
-        myPlayer->setHP() -= myEnemy->getDMG();
-        std::cout << "Collision enemy!!! HP ==" << myPlayer->getHP() << std::endl;
-    }*/
+
+
     myPlayer->update();
     for (std::vector<CGameObject*>::iterator x = m_Objects.begin(); x!= m_Objects.end(); ++x){
         (*x)->update();
@@ -184,10 +158,79 @@ bool CGame::checkCollision(const SDL_Rect &a, const SDL_Rect &b) const {
     return false;
 }
 
-bool CGame::loadGame(const char *fileName) {
-    return false;
+bool CGame::loadGame(std::string fileName) {
+    std::ifstream in(fileName, std::ios_base::in);
+    int map[20][25];
+    for (int i = 0; i < 20; ++i)
+        for (int j = 0; j < 25; ++j) {
+            in >> map[i][j];
+        }
+    myMap->LoadMap(map);
+    int attributes[8];
+    in >> CWall::cnt;
+    for (int l = 0; l < CWall::cnt; ++l) {
+        for (int k = 0; k < 4; ++k) in >> attributes[k];
+        m_Objects.push_back(new CWall("../images/wall.png", attributes[0], attributes[1], attributes[2],
+                                      attributes[3]));
+    }
+
+    for (int k = 0; k < 7; ++k) in >> attributes[k];
+    myPlayer = new CHero("../images/cat_startl.png", "../images/cat_startr.png", attributes[0], attributes[1],
+                         attributes[2], attributes[3], attributes[4], attributes[5], attributes[6],
+                         "../images/cat_right.png", "../images/cat.png");
+    for (int k = 0; k < 3; ++k) in >> attributes[k];
+    myPlayer->getInv().init(attributes[0],attributes[1], attributes[2]);
+
+        in >> CEnemy::cnt;
+        for (int l = 0; l < CEnemy::cnt; ++l) {
+            for (int k = 0; k < 8; ++k) in >> attributes[k];
+            m_Objects.push_back(new CEnemy("../images/enemy.png", attributes[0], attributes[1], attributes[2],
+                                           attributes[3], attributes[4], attributes[5], attributes[6], attributes[7]));
+        }
+    in >> CRune::cnt;
+    for (int l = 0; l < CRune::cnt; ++l) {
+        for (int k = 0; k < 5; ++k) in >> attributes[k];
+        m_Objects.push_back(new CRune("../images/water.png", attributes[0], attributes[1], attributes[2],
+                                        attributes[3], attributes[4]));
+    }
+    in.close();
 }
 
-bool CGame::saveGame(const char *fileName) {
+bool CGame::saveGame(std::string fileName) {
+    std::ofstream out(fileName, std::ios_base::out);
+    out << myMap->save2String();
+
+    out << CWall::cnt << "\n";
+    int l = 0;
+    for (; l < CWall::cnt; ++l) {
+        out << m_Objects[l]->save2String();
+    }
+    out << myPlayer->save2String();
+    out << CEnemy::cnt << "\n";
+    int limit = l + CEnemy::cnt;
+    for (; l < limit; ++l) {
+        out << m_Objects[l]->save2String();
+    }
+    out << CRune::cnt << "\n";
+    limit += CRune::cnt;
+    for (; l < limit && l < m_Objects.size(); ++l) {
+        out << m_Objects[l]->save2String();
+    }
+    out.close();
+}
+
+bool CGame::checkCollisionHit(SDL_Rect &a, SDL_Rect &b) {
+    if (myPlayer -> hitAnimationCnt > 0 && myPlayer->getxVel() >= 0){
+        if (a.x + myPlayer->getxVel() + a.w + 20 > b.x &&
+            a.y + myPlayer->getyVel() + a.h > b.y &&
+            b.x + b.w > a.x + myPlayer->getxVel() + 20 &&
+            b.y + b.h > a.y + myPlayer->getyVel()) return true;
+    }
+    else if (myPlayer -> hitAnimationCnt > 0 && myPlayer->getxVel() < 0){
+        if (a.x + myPlayer->getxVel() + a.w - 20 > b.x &&
+            a.y + myPlayer->getyVel() + a.h > b.y &&
+            b.x + b.w > a.x + myPlayer->getxVel() - 20 &&
+            b.y + b.h > a.y + myPlayer->getyVel()) return true;
+    }
     return false;
 }

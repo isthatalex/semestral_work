@@ -5,9 +5,11 @@
 #include "CEnemy.h"
 #include "CHero.h"
 #include <iostream>
-CEnemy::CEnemy(const char *textureName, int x, int y, int w, int h, int HP, int dmg) :
-        CMovingObject(textureName, x, y, w, h, HP, dmg) {
-
+int CEnemy::cnt = 0;
+CEnemy::CEnemy(const char *textureName, int x, int y, int w, int h, int HP, int dmg, int HPMax, int dist) :
+        CMovingObject(textureName, x, y, w, h, HP, dmg, HPMax), m_Dist(dist), m_Start (m_xPos){
+    if (m_Dist >= 0) m_xVel = 1;
+    else m_xVel = -1;
 }
 
 void CEnemy::update() {
@@ -18,6 +20,12 @@ void CEnemy::update() {
 
 
 void CEnemy::move() {
+    if (m_xPos - m_Start == m_Dist){
+        m_Dist = -m_Dist;
+        m_xVel = -m_xVel;
+    }
+    m_xPos += m_xVel;
+
 
 }
 
@@ -28,3 +36,19 @@ void CEnemy::collideWith(CHero &x) {
     std::cout << "Collision enemy!!! HP ==" << x.getHP() << std::endl;
 
 }
+
+std::string CEnemy::save2String() const {
+    return     std::to_string(m_xPos) + " "  + std::to_string(m_yPos) + " " + std::to_string(destRect.w)
+               + " " + std::to_string(destRect.h) + " " + std::to_string(m_HP) + " "
+               + std::to_string(m_dmg) + " " + std::to_string(m_HPMax) + " " + std::to_string(m_Dist) + "\n";
+}
+
+void CEnemy::takeDmg(int x) {
+    m_HP -= x;
+    if (m_HP <= 0) {
+        isAlive = false;
+
+    }
+}
+
+

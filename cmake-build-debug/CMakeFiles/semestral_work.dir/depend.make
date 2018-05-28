@@ -16,7 +16,21 @@ CMakeFiles/semestral_work.dir/src/CGame.cpp.o: ../src/CHero.h
 CMakeFiles/semestral_work.dir/src/CGame.cpp.o: ../src/CInventory.h
 CMakeFiles/semestral_work.dir/src/CGame.cpp.o: ../src/CMap.h
 CMakeFiles/semestral_work.dir/src/CGame.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/CGame.cpp.o: ../src/CRune.h
 CMakeFiles/semestral_work.dir/src/CGame.cpp.o: ../src/CWall.h
+
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CEnemy.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CGame.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CGameEngine.cpp
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CGameEngine.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CGameObject.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CHero.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CInventory.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CMap.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CMenu.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CRune.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o: ../src/CWall.h
 
 CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CEnemy.h
 CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CGame.h
@@ -26,14 +40,21 @@ CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CHero.h
 CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CInventory.h
 CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CMap.h
 CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CRune.h
 CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CTextureManager.h
+CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o: ../src/CWall.h
 
 CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CEnemy.h
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CGame.h
 CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CGameObject.h
 CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CHero.cpp
 CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CHero.h
 CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CInventory.h
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CMap.h
 CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CRune.h
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CTextureManager.h
+CMakeFiles/semestral_work.dir/src/CHero.cpp.o: ../src/CWall.h
 
 CMakeFiles/semestral_work.dir/src/CInventory.cpp.o: ../src/CInventory.cpp
 CMakeFiles/semestral_work.dir/src/CInventory.cpp.o: ../src/CInventory.h
@@ -46,7 +67,21 @@ CMakeFiles/semestral_work.dir/src/CMap.cpp.o: ../src/CInventory.h
 CMakeFiles/semestral_work.dir/src/CMap.cpp.o: ../src/CMap.cpp
 CMakeFiles/semestral_work.dir/src/CMap.cpp.o: ../src/CMap.h
 CMakeFiles/semestral_work.dir/src/CMap.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/CMap.cpp.o: ../src/CRune.h
 CMakeFiles/semestral_work.dir/src/CMap.cpp.o: ../src/CTextureManager.h
+CMakeFiles/semestral_work.dir/src/CMap.cpp.o: ../src/CWall.h
+
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CEnemy.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CGame.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CGameObject.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CHero.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CInventory.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CMap.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CMenu.cpp
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CMenu.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CRune.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o: ../src/CWall.h
 
 CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o: ../src/CGameObject.h
 CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o: ../src/CMovingObject.cpp
@@ -67,8 +102,10 @@ CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CHero.h
 CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CInventory.h
 CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CMap.h
 CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CRune.h
 CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CTextureManager.cpp
 CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CTextureManager.h
+CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o: ../src/CWall.h
 
 CMakeFiles/semestral_work.dir/src/CWall.cpp.o: ../src/CEnemy.h
 CMakeFiles/semestral_work.dir/src/CWall.cpp.o: ../src/CGameObject.h
@@ -80,10 +117,14 @@ CMakeFiles/semestral_work.dir/src/CWall.cpp.o: ../src/CWall.h
 
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CEnemy.h
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CGame.h
+CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CGameEngine.h
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CGameObject.h
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CHero.h
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CInventory.h
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CMap.h
+CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CMenu.h
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CMovingObject.h
+CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CRune.h
+CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/CWall.h
 CMakeFiles/semestral_work.dir/src/main.cpp.o: ../src/main.cpp
 

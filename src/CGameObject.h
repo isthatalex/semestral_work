@@ -4,21 +4,28 @@
 
 #ifndef SEMESTRAL_WORK_CGAMEOBJECT_H
 #define SEMESTRAL_WORK_CGAMEOBJECT_H
-#include "SDL2/SDL.h"
-//#include "CHero.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include <string>
+
+
 class CMovingObject;
 class CHero;
 class CGameObject {
 
 public:
     CGameObject(const char * textureName, int x, int y, int w, int h);
-    //~CGameObject();
+    virtual ~CGameObject();
 
     virtual void update();
-    void render();
+
+    virtual void render();
     SDL_Rect  getRect() const;
     SDL_Rect & getRect();
+    virtual void takeDmg(int x) {}
+    bool isDestroyed () const { return !isAlive;}
     virtual void collideWith (CHero & x) = 0;
+    virtual std::string save2String () const = 0;
 
 protected:
     int m_xPos;
@@ -26,7 +33,7 @@ protected:
     SDL_Rect srcRect;
     SDL_Rect destRect;
     SDL_Texture * m_ObjectTexture;
-
+    bool isAlive;
 
 };
 

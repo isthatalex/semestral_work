@@ -4,8 +4,8 @@
 
 #include "CMovingObject.h"
 
-CMovingObject::CMovingObject(const char *textureName, int x, int y, int w, int h, int HP, int dmg) :
-        CGameObject(textureName, x, y, w, h), m_xVel(0), m_yVel(0), m_HP(HP), m_HPMax(m_HP), m_dmg(dmg)
+CMovingObject::CMovingObject(const char *textureName, int x, int y, int w, int h, int HP, int dmg, int HPMax) :
+        CGameObject(textureName, x, y, w, h), m_xVel(0), m_yVel(0), m_HP(HP), m_HPMax(HPMax), m_dmg(dmg)
 {}
 
 

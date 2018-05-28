@@ -10,21 +10,31 @@
 
 class CHero : public CMovingObject{
 public:
-    CHero(const char * textureName, int x, int y,
-                  int w, int h, int HP, int dmg);
-
+    CHero(const char * textureName, const char * textureRight, int x, int y,
+                  int w, int h, int HP, int dmg, int HPMax, const char * hitr, const char* hitl);
+    ~CHero() = default;
     virtual void move();
     virtual void update();
+
     void useHeal();
     void useHaste();
-    void useInvulnerability();
-    void hit (CEnemy & x) const;
+    void useDD();
+    CInventory & getInv () {
+        return m_Runes;
+    }
+    std::string save2String () const;
     void pickRune (int type);
+    void render ();
     virtual void collideWith(CHero & x) {}
-
+    int hitAnimationCnt;
 private:
     int m_Kills;
+    int m_speedConst;
     CInventory m_Runes;
+    SDL_Texture * m_TextureRight;
+    SDL_Texture * m_hitLeft;
+    SDL_Texture * m_hitRight;
+
 
 };
 

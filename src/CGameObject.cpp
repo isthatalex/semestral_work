@@ -7,7 +7,7 @@
 #include "CTextureManager.h"
 #include "CGame.h"
 
-CGameObject::CGameObject(const char *textureName, int x, int y, int w, int h) {
+CGameObject::CGameObject(const char *textureName, int x, int y, int w, int h) : isAlive(true) {
     std::cout << "Created object from " << textureName << std::endl;
 
     m_ObjectTexture = CTextureManager::LoadTexture(textureName);
@@ -38,6 +38,11 @@ SDL_Rect CGameObject::getRect() const {
 
 SDL_Rect &CGameObject::getRect() {
     return destRect;
+}
+
+CGameObject::~CGameObject() {
+    delete m_ObjectTexture;
+
 }
 
 

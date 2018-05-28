@@ -12,7 +12,10 @@
 class CWall : public CGameObject{
 public:
     CWall(const char * textureName, int x, int y, int w, int h);
+    ~CWall() = default;
     virtual void collideWith (CHero & x);
+    std::string save2String() const;
+    static int cnt;
 };
 
 

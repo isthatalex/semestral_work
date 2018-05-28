@@ -96,6 +96,12 @@
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CGame.h">
 			<Option target="semestral_work"/>
 		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CGameEngine.cpp">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CGameEngine.h">
+			<Option target="semestral_work"/>
+		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CGameObject.cpp">
 			<Option target="semestral_work"/>
 		</Unit>
@@ -118,6 +124,12 @@
 			<Option target="semestral_work"/>
 		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CMap.h">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CMenu.cpp">
+			<Option target="semestral_work"/>
+		</Unit>
+		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CMenu.h">
 			<Option target="semestral_work"/>
 		</Unit>
 		<Unit filename="/home/alexz/CLionProjects/semestral_work/src/CMovingObject.cpp">

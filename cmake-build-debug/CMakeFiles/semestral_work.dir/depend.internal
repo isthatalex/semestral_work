@@ -17,6 +17,20 @@ CMakeFiles/semestral_work.dir/src/CGame.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CInventory.h
  /home/alexz/CLionProjects/semestral_work/src/CMap.h
  /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
+ /home/alexz/CLionProjects/semestral_work/src/CWall.h
+CMakeFiles/semestral_work.dir/src/CGameEngine.cpp.o
+ /home/alexz/CLionProjects/semestral_work/src/CEnemy.h
+ /home/alexz/CLionProjects/semestral_work/src/CGame.h
+ /home/alexz/CLionProjects/semestral_work/src/CGameEngine.cpp
+ /home/alexz/CLionProjects/semestral_work/src/CGameEngine.h
+ /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CHero.h
+ /home/alexz/CLionProjects/semestral_work/src/CInventory.h
+ /home/alexz/CLionProjects/semestral_work/src/CMap.h
+ /home/alexz/CLionProjects/semestral_work/src/CMenu.h
+ /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
  /home/alexz/CLionProjects/semestral_work/src/CWall.h
 CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CEnemy.h
@@ -27,14 +41,21 @@ CMakeFiles/semestral_work.dir/src/CGameObject.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CInventory.h
  /home/alexz/CLionProjects/semestral_work/src/CMap.h
  /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
  /home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
+ /home/alexz/CLionProjects/semestral_work/src/CWall.h
 CMakeFiles/semestral_work.dir/src/CHero.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CEnemy.h
+ /home/alexz/CLionProjects/semestral_work/src/CGame.h
  /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
  /home/alexz/CLionProjects/semestral_work/src/CHero.cpp
  /home/alexz/CLionProjects/semestral_work/src/CHero.h
  /home/alexz/CLionProjects/semestral_work/src/CInventory.h
+ /home/alexz/CLionProjects/semestral_work/src/CMap.h
  /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
+ /home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
+ /home/alexz/CLionProjects/semestral_work/src/CWall.h
 CMakeFiles/semestral_work.dir/src/CInventory.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CInventory.cpp
  /home/alexz/CLionProjects/semestral_work/src/CInventory.h
@@ -47,7 +68,21 @@ CMakeFiles/semestral_work.dir/src/CMap.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CMap.cpp
  /home/alexz/CLionProjects/semestral_work/src/CMap.h
  /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
  /home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
+ /home/alexz/CLionProjects/semestral_work/src/CWall.h
+CMakeFiles/semestral_work.dir/src/CMenu.cpp.o
+ /home/alexz/CLionProjects/semestral_work/src/CEnemy.h
+ /home/alexz/CLionProjects/semestral_work/src/CGame.h
+ /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CHero.h
+ /home/alexz/CLionProjects/semestral_work/src/CInventory.h
+ /home/alexz/CLionProjects/semestral_work/src/CMap.h
+ /home/alexz/CLionProjects/semestral_work/src/CMenu.cpp
+ /home/alexz/CLionProjects/semestral_work/src/CMenu.h
+ /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
+ /home/alexz/CLionProjects/semestral_work/src/CWall.h
 CMakeFiles/semestral_work.dir/src/CMovingObject.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
  /home/alexz/CLionProjects/semestral_work/src/CMovingObject.cpp
@@ -68,8 +103,10 @@ CMakeFiles/semestral_work.dir/src/CTextureManager.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CInventory.h
  /home/alexz/CLionProjects/semestral_work/src/CMap.h
  /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
  /home/alexz/CLionProjects/semestral_work/src/CTextureManager.cpp
  /home/alexz/CLionProjects/semestral_work/src/CTextureManager.h
+ /home/alexz/CLionProjects/semestral_work/src/CWall.h
 CMakeFiles/semestral_work.dir/src/CWall.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CEnemy.h
  /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
@@ -81,9 +118,13 @@ CMakeFiles/semestral_work.dir/src/CWall.cpp.o
 CMakeFiles/semestral_work.dir/src/main.cpp.o
  /home/alexz/CLionProjects/semestral_work/src/CEnemy.h
  /home/alexz/CLionProjects/semestral_work/src/CGame.h
+ /home/alexz/CLionProjects/semestral_work/src/CGameEngine.h
  /home/alexz/CLionProjects/semestral_work/src/CGameObject.h
  /home/alexz/CLionProjects/semestral_work/src/CHero.h
  /home/alexz/CLionProjects/semestral_work/src/CInventory.h
  /home/alexz/CLionProjects/semestral_work/src/CMap.h
+ /home/alexz/CLionProjects/semestral_work/src/CMenu.h
  /home/alexz/CLionProjects/semestral_work/src/CMovingObject.h
+ /home/alexz/CLionProjects/semestral_work/src/CRune.h
+ /home/alexz/CLionProjects/semestral_work/src/CWall.h
  /home/alexz/CLionProjects/semestral_work/src/main.cpp

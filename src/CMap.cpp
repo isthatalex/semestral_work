@@ -4,7 +4,7 @@
 
 #include "CMap.h"
 #include "CTextureManager.h"
-
+/*
 
 int lvl1[20][25] = {
         {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -27,7 +27,7 @@ int lvl1[20][25] = {
         {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
         {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
-};
+};*/
 
 CMap::CMap() {
 
@@ -35,7 +35,7 @@ CMap::CMap() {
     water = CTextureManager::LoadTexture("../images/water.png");
     grass = CTextureManager::LoadTexture("../images/grass.png");
 
-    LoadMap(lvl1);
+   // LoadMap(lvl1);
 
     src.x = src.y = 0;
     src.w = dest.w = 32;
@@ -81,5 +81,26 @@ void CMap::DrawMap() {
 
         }
     }
+}
+
+std::ostream &operator<<(std::ostream &os, const CMap &a) {
+    for (int i = 0; i < 20; ++i) {
+        for (int j = 0; j < 25; ++j) {
+            os << a.map[i][j] << " ";
+        }
+        os << "\n";
+    }
+    return os;
+}
+
+std::string CMap::save2String() const {
+    std::string str;
+    for (int i = 0; i < 20; ++i) {
+        for (int j = 0; j < 25; ++j) {
+            str += std::to_string(map[i][j]) + " ";
+        }
+        str += "\n";
+    }
+    return str;
 }
 

@@ -6,18 +6,23 @@
 #define SEMESTRAL_WORK_CINVENTORY_H
 
 
+#include <ostream>
+
 class CInventory {
 public:
     CInventory() : m_Inventory() {}
+    ~CInventory() = default;
+    void init (int heal, int haste, int inv);
     void getHealing();
     void getHaste();
-    void getInvulnerability();
+    void getDD();
     bool useHealing();
     bool useHaste();
-    bool useInvulnerability();
-
+    bool useDD();
+    friend std::ostream & operator << (std::ostream& os, const CInventory & inv);
+    std::string save2String () const;
 private:
-    unsigned m_Inventory[3];
+    int m_Inventory[3];
 };
 
 
