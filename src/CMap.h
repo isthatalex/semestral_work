@@ -19,7 +19,8 @@ public:
     std::string save2String () const;
 private:
 
-    SDL_Rect src, dest;
+    SDL_Rect src;
+    SDL_Rect dest;
 
     SDL_Texture * dirt;
     SDL_Texture * water;

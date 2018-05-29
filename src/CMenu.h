@@ -9,10 +9,7 @@
 
 class CMenu {
 public:
-    void init ();
-    void handleEvents();
-private:
-
+    int init ();
 };
 
 

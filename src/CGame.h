@@ -20,7 +20,7 @@ class CMap;
 
 class CGame {
 public:
-    CGame(SDL_Window * wind, SDL_Renderer * rend, std::string fileName = "../images/gameFile.txt");
+    CGame(SDL_Window * wind, SDL_Renderer * rend, std::string fileName, int heroSuperPower);
     ~CGame();
 
     void init ();
@@ -36,17 +36,19 @@ public:
 
     static SDL_Renderer * myRenderer;
 
-    bool checkCollision(const SDL_Rect & a, const SDL_Rect & b) const;
+
 
 private:
     bool isRunning;
+    int playerSP;
     SDL_Window * myWindow;
     CHero * myPlayer;
     std::string fileName;
     CMap *myMap;
     std::vector <CGameObject * > m_Objects;
 
-    bool checkCollisionHit(SDL_Rect &rect, SDL_Rect &sdl_rect);
+    bool checkCollision(const SDL_Rect & a, const SDL_Rect & b) const;
+    bool checkCollisionHit(SDL_Rect &rect, SDL_Rect &sdl_rect) const;
 };
 
 

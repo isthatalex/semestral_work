@@ -9,5 +9,6 @@ int main(){
     gameEngine = new CGameEngine();
     gameEngine->init();
     gameEngine->gameLoop();
+    delete gameEngine;
     return 0;
 }

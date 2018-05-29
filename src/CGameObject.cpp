@@ -17,9 +17,10 @@ CGameObject::CGameObject(const char *textureName, int x, int y, int w, int h) : 
     srcRect.w = 32;
     srcRect.x = 0;
     srcRect.y = 0;
+    destRect.x = x;
+    destRect.y = y;
     destRect.w = w;
     destRect.h = h;
-
 
 }
 
@@ -32,16 +33,13 @@ void CGameObject::render() {
     SDL_RenderCopy(CGame::myRenderer, m_ObjectTexture, &srcRect, &destRect);
 }
 
-SDL_Rect CGameObject::getRect() const {
-    return destRect;
-}
 
 SDL_Rect &CGameObject::getRect() {
     return destRect;
 }
 
 CGameObject::~CGameObject() {
-    delete m_ObjectTexture;
+    SDL_DestroyTexture(m_ObjectTexture);
 
 }
 

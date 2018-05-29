@@ -11,6 +11,8 @@
 
 class CGameEngine {
 public:
+
+    ~CGameEngine();
     void init();
     void gameLoop();
 

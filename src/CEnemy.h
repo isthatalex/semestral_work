@@ -20,7 +20,7 @@ class CEnemy : public CMovingObject{
     std::string  save2String () const;
     static int cnt;
 private:
-    int m_Dist;
+    int m_Distance;
     int m_Start;
 };
 

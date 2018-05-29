@@ -8,22 +8,29 @@
 #include <iostream>
 #include <cstdlib>
 CHero::CHero(const char *textureName, const char * textureRight, int x, int y, int w, int h, int HP, int dmg, int HPMax,
-const char *hitr, const char * hitl) :
-        CMovingObject(textureName, x, y, w, h, HP, dmg, HPMax), hitAnimationCnt(0), m_Kills(0), m_speedConst(1),
-            m_TextureRight (CTextureManager::LoadTexture(textureRight)),
-        m_hitRight (CTextureManager::LoadTexture(hitr)),
-        m_hitLeft (CTextureManager::LoadTexture(hitl)){
+             int speed, const char *hitRight, const char * hitLeft) :
+        CMovingObject(textureName, x, y, w, h, HP, dmg, HPMax), hitAnimationCnt(0), m_speedConst(speed),
+        m_TextureRight (CTextureManager::LoadTexture(textureRight)), m_hitLeft (CTextureManager::LoadTexture(hitLeft)),
+        m_hitRight (CTextureManager::LoadTexture(hitRight)){
 
 }
 
+CHero::~CHero() {
+    SDL_DestroyTexture(m_TextureRight);
+    SDL_DestroyTexture(m_hitLeft);
+    SDL_DestroyTexture(m_hitRight);
+
+}
+
+
 void CHero::update() {
-    move();
+    this->move();
     destRect.x = m_xPos;
     destRect.y = m_yPos;
     system("clear");
     std::cout << "\t0 - heal; 1 - DD; 2 - haste; X - hit" << std::endl;
     std::cout << "\tHP == " << m_HP  << "; dmg == " << m_dmg << "; speed == " <<
-              ((abs(m_xVel) > abs(m_yVel))? m_xVel :m_yVel) << "\n\t" << getInv() << std::endl;
+              ((abs(m_xVel) > abs(m_yVel))? m_xVel*m_speedConst :m_yVel*m_speedConst) <<"\n\t" << getInv() << std::endl;
 }
 
 
@@ -33,12 +40,12 @@ void CHero::move() {
 }
 
 void CHero::useHeal() {
-    if(m_Runes.useHealing()) m_HP  = (m_HPMax > m_HP + 50) ? m_HP+50 : m_HPMax;
+    if(m_Runes.useHealing()) m_HP  = (m_HPMax > m_HP + 100) ? m_HP + 100 : m_HPMax;
     else std::cout << "No heal runes available." << std::endl;
 }
 
 void CHero::useHaste() {
-    if(m_Runes.useHaste()) {m_speedConst *=2;}
+    if(m_Runes.useHaste()) {m_speedConst *= 2;}
     else std::cout << "No haste runes available." << std::endl;
 }
 
@@ -60,7 +67,8 @@ void CHero::pickRune(int type) {
 std::string  CHero::save2String() const {
     return     std::to_string(m_xPos) + " "  + std::to_string(m_yPos) + " " + std::to_string(destRect.w)
                + " " + std::to_string(destRect.h) + " " + std::to_string(m_HP) + " "
-               + std::to_string(m_dmg) + " " + std::to_string(m_HPMax) + "\n" + m_Runes.save2String() + "\n";
+               + std::to_string(m_dmg) + " " + std::to_string(m_HPMax) + " " + std::to_string(m_speedConst)
+               + "\n" + m_Runes.save2String() + "\n";
 }
 
 void CHero::render() {
@@ -74,5 +82,13 @@ void CHero::render() {
         if (m_xVel>=0)  SDL_RenderCopy(CGame::myRenderer, m_TextureRight, &srcRect, &destRect);
         else  SDL_RenderCopy(CGame::myRenderer, m_ObjectTexture, &srcRect, &destRect);
     }
+}
+
+void CHero::takeDmg(int x) {
+    m_HP -= x;
+}
+
+CInventory &CHero::getInv()  {
+    return m_Runes;
 }
 

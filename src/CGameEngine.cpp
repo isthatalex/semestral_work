@@ -7,6 +7,19 @@
 
 void CGameEngine::init() {
 
+
+    menu = new CMenu();
+    std::cout << "Press ENTER to start a new game or type the game's filename and press ENTER" << std::endl;
+    int superPower = 0;
+    if(std::cin.peek()=='\n') {
+        std::cout << "NewGAME" << std::endl;
+        superPower = menu->init();
+        fileName = "gameFile.txt";
+    }
+    else{
+        getline(std::cin, fileName);
+        std::cout << fileName << std::endl;
+    }
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
         std::cout << "Subsystems Initialized..." << std::endl;
         myWindow = SDL_CreateWindow("MyGame", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 640, false);
@@ -23,23 +36,10 @@ void CGameEngine::init() {
 
 
     } else {
-       std::cout << "OWIBKA" << std::endl;
+        std::cout << "OWIBKA" << std::endl;
         exit(0);
     }
-    menu = new CMenu();
-    menu->init();
-    std::cout << "Press ENTER to start a new game or type the game's filename and press ENTER" << std::endl;
-    std::string fileName;
-    if(std::cin.peek()=='\n') {
-        std::cout << "NewGAME" << std::endl;
-        game = new CGame(myWindow, myRenderer);
-    }
-    else{
-        getline(std::cin, fileName);
-        std::cout << fileName << std::endl;
-        game = new CGame(myWindow, myRenderer, "../images/"+fileName);
-    }
-
+    game = new CGame(myWindow, myRenderer, "../images/"+fileName, superPower);
 
 }
 
@@ -70,3 +70,10 @@ void CGameEngine::gameLoop() {
 
     game->clean();
 }
+
+CGameEngine::~CGameEngine() {
+    delete menu;
+    delete game;
+}
+
+

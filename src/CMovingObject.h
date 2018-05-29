@@ -19,20 +19,18 @@ public:
     virtual void update() = 0;
 
     int getxVel() const;
-
     int getyVel() const;
+    int getHP() const;
+    int getDMG() const;
 
     int &setxVel();
-
     int &setyVel();
 
     int &setHP();
+    int &setMaxHP();
 
-    int getHP() const;
 
-    int getDMG() const;
-
-    virtual void collideWith(CHero &x) = 0;
+    virtual void collideWith(CHero &x) {}
     std::string  save2String () const = 0;
 
 protected:

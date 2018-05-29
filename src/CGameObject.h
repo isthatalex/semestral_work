@@ -20,7 +20,6 @@ public:
     virtual void update();
 
     virtual void render();
-    SDL_Rect  getRect() const;
     SDL_Rect & getRect();
     virtual void takeDmg(int x) {}
     bool isDestroyed () const { return !isAlive;}
@@ -30,10 +29,10 @@ public:
 protected:
     int m_xPos;
     int m_yPos;
+    bool isAlive;
     SDL_Rect srcRect;
     SDL_Rect destRect;
     SDL_Texture * m_ObjectTexture;
-    bool isAlive;
 
 };
 

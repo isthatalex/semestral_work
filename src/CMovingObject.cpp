@@ -9,8 +9,6 @@ CMovingObject::CMovingObject(const char *textureName, int x, int y, int w, int h
 {}
 
 
-
-
 int CMovingObject::getyVel() const {
     return m_yVel;
 }
@@ -28,7 +26,7 @@ int & CMovingObject::setxVel(){
     return m_xVel;
 }
 
-int &CMovingObject::setHP() {
+int & CMovingObject::setHP() {
     return m_HP;
 }
 
@@ -38,4 +36,8 @@ int CMovingObject::getHP() const {
 
 int CMovingObject::getDMG() const {
     return m_dmg;
+}
+
+int &CMovingObject::setMaxHP() {
+    return m_HPMax;
 }
