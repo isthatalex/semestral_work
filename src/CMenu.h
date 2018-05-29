@@ -9,7 +9,7 @@
 
 class CMenu {
 public:
-    int init ();
+    int init();
 };
 
 

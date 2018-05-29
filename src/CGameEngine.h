@@ -13,15 +13,17 @@ class CGameEngine {
 public:
 
     ~CGameEngine();
+
     void init();
+
     void gameLoop();
 
 
 private:
-    SDL_Window * myWindow;
-    SDL_Renderer * myRenderer;
-    CGame * game;
-    CMenu * menu;
+    SDL_Window *myWindow;
+    SDL_Renderer *myRenderer;
+    CGame *game;
+    CMenu *menu;
     std::string fileName;
 
 };

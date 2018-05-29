@@ -11,12 +11,11 @@ void CGameEngine::init() {
     menu = new CMenu();
     std::cout << "Press ENTER to start a new game or type the game's filename and press ENTER" << std::endl;
     int superPower = 0;
-    if(std::cin.peek()=='\n') {
+    if (std::cin.peek() == '\n') {
         std::cout << "NewGAME" << std::endl;
         superPower = menu->init();
         fileName = "gameFile.txt";
-    }
-    else{
+    } else {
         getline(std::cin, fileName);
         std::cout << fileName << std::endl;
     }
@@ -39,7 +38,7 @@ void CGameEngine::init() {
         std::cout << "OWIBKA" << std::endl;
         exit(0);
     }
-    game = new CGame(myWindow, myRenderer, "../images/"+fileName, superPower);
+    game = new CGame(myWindow, myRenderer, "../images/" + fileName, superPower);
 
 }
 
@@ -50,11 +49,9 @@ void CGameEngine::gameLoop() {
     Uint32 frameStart;
     int frameTime;
     game->init();
-    while (game->running()){
-
+    while (game->running()) {
 
         frameStart = SDL_GetTicks();
-
 
         game->handleEvents();
         game->update();
@@ -63,7 +60,7 @@ void CGameEngine::gameLoop() {
         frameTime = SDL_GetTicks() - frameStart;
 
         //need to delay
-        if (frameDelay > frameTime){
+        if (frameDelay > frameTime) {
             SDL_Delay(frameDelay - frameTime);
         }
     }

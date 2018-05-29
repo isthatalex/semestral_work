@@ -18,6 +18,7 @@ CMap::CMap() {
 
     dest.x = dest.y = 0;
 }
+
 CMap::~CMap() {
     SDL_DestroyTexture(dirt);
     SDL_DestroyTexture(water);
@@ -26,8 +27,8 @@ CMap::~CMap() {
 }
 
 void CMap::LoadMap(int arr[20][25]) {
-    for (int x_Row = 0; x_Row < 20; ++x_Row ){
-        for (int x_Col = 0; x_Col < 25; ++x_Col){
+    for (int x_Row = 0; x_Row < 20; ++x_Row) {
+        for (int x_Col = 0; x_Col < 25; ++x_Col) {
             map[x_Row][x_Col] = arr[x_Row][x_Col];
         }
     }
@@ -35,14 +36,14 @@ void CMap::LoadMap(int arr[20][25]) {
 
 void CMap::DrawMap() {
     int type = 0;
-    for (int x_Row = 0; x_Row < 20; ++x_Row ){
-        for (int x_Col = 0; x_Col < 25; ++x_Col){
+    for (int x_Row = 0; x_Row < 20; ++x_Row) {
+        for (int x_Col = 0; x_Col < 25; ++x_Col) {
             type = map[x_Row][x_Col];
 
             dest.x = x_Col * 32;
             dest.y = x_Row * 32;
 
-            switch (type){
+            switch (type) {
                 case 1:
                     CTextureManager::Draw(water, src, dest);
                     break;

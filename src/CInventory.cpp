@@ -17,7 +17,7 @@ void CInventory::getDD() {
 }
 
 bool CInventory::useHealing() {
-    if (m_Inventory[0] > 0){
+    if (m_Inventory[0] > 0) {
         m_Inventory[0]--;
         return true;
     }
@@ -25,7 +25,7 @@ bool CInventory::useHealing() {
 }
 
 bool CInventory::useHaste() {
-    if (m_Inventory[2] > 0){
+    if (m_Inventory[2] > 0) {
         m_Inventory[2]--;
         return true;
     }
@@ -33,7 +33,7 @@ bool CInventory::useHaste() {
 }
 
 bool CInventory::useDD() {
-    if (m_Inventory[1] > 0){
+    if (m_Inventory[1] > 0) {
         m_Inventory[1]--;
         return true;
     }
@@ -54,6 +54,6 @@ std::ostream &operator<<(std::ostream &os, const CInventory &inv) {
 }
 
 std::string CInventory::save2String() const {
-    return     std::to_string(m_Inventory[0]) + " "  + std::to_string(m_Inventory[1]) + " "
-               + std::to_string(m_Inventory[2]);
+    return std::to_string(m_Inventory[0]) + " " + std::to_string(m_Inventory[1]) + " "
+           + std::to_string(m_Inventory[2]);
 }

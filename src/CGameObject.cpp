@@ -24,7 +24,7 @@ CGameObject::CGameObject(const char *textureName, int x, int y, int w, int h) : 
 
 }
 
-void CGameObject::update (){
+void CGameObject::update() {
     destRect.x = m_xPos;
     destRect.y = m_yPos;
 }

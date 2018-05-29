@@ -4,11 +4,12 @@
 
 #include "CGameEngine.h"
 
-int main(){
-    CGameEngine * gameEngine;
+int main() {
+    CGameEngine *gameEngine;
     gameEngine = new CGameEngine();
     gameEngine->init();
     gameEngine->gameLoop();
     delete gameEngine;
+
     return 0;
 }

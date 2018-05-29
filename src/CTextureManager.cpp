@@ -5,10 +5,10 @@
 #include "CTextureManager.h"
 #include "CGame.h"
 
-SDL_Texture * CTextureManager::LoadTexture(const char *fileName) {
+SDL_Texture *CTextureManager::LoadTexture(const char *fileName) {
 
-    SDL_Surface * surface = IMG_Load(fileName);
-    SDL_Texture * texture = SDL_CreateTextureFromSurface(CGame::myRenderer, surface);
+    SDL_Surface *surface = IMG_Load(fileName);
+    SDL_Texture *texture = SDL_CreateTextureFromSurface(CGame::myRenderer, surface);
     SDL_FreeSurface(surface);
 
     return texture;

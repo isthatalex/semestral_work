@@ -20,34 +20,40 @@ class CMap;
 
 class CGame {
 public:
-    CGame(SDL_Window * wind, SDL_Renderer * rend, std::string fileName, int heroSuperPower);
+    CGame(SDL_Window *wind, SDL_Renderer *rend, std::string fileName, int heroSuperPower);
+
     ~CGame();
 
-    void init ();
+    void init();
 
     void handleEvents();
+
     void update();
+
     void render();
+
     void clean();
 
     bool loadGame(std::string fileName);
+
     bool saveGame(std::string fileName);
-    bool running () const; // is the game running
 
-    static SDL_Renderer * myRenderer;
+    bool running() const; // is the game running
 
+    static SDL_Renderer *myRenderer;
 
 
 private:
     bool isRunning;
     int playerSP;
-    SDL_Window * myWindow;
-    CHero * myPlayer;
+    SDL_Window *myWindow;
+    CHero *myPlayer;
     std::string fileName;
     CMap *myMap;
-    std::vector <CGameObject * > m_Objects;
+    std::vector<CGameObject *> m_Objects;
 
-    bool checkCollision(const SDL_Rect & a, const SDL_Rect & b) const;
+    bool checkCollision(const SDL_Rect &a, const SDL_Rect &b) const;
+
     bool checkCollisionHit(SDL_Rect &rect, SDL_Rect &sdl_rect) const;
 };
 

@@ -6,7 +6,7 @@
 #include "CMenu.h"
 
 int CMenu::init() {
-  std::cout << "Choose your player's super power\n\t 1 for Strength -- 2 for Agility -- 3 for Speed" << std::endl;
+    std::cout << "Choose your player's super power\n\t 1 for Strength -- 2 for Agility -- 3 for Speed" << std::endl;
     int j;
     std::cin >> j;
 
